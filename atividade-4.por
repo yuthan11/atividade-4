@@ -30,3 +30,19 @@ programa
 				x1 = (-b + mat.raiz(delta, 2.0)) / (2 * a)
 				escreva("A equação possui uma única raiz real:\n")
 				escreva("X = ", mat.arredondar(x1, 2), "\n")
+
+        }
+			senao
+			{
+				x1 = (-b + mat.raiz(delta, 2.0)) / (2 * a)
+				x2 = (-b - mat.raiz(delta, 2.0)) / (2 * a)
+				
+				escreva("A equação possui duas raízes reais:\n")
+				escreva("X1 = ", mat.arredondar(x1, 2), "\n")
+				escreva("X2 = ", mat.arredondar(x2, 2), "\n")
+			}
+		}
+	}
+}
+
+

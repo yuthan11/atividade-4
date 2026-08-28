@@ -19,3 +19,14 @@ programa
 		{
 			escreva("Erro: O valor de 'a' não pode ser zero em uma função de segundo grau.\n")
 		}
+
+			// Verificação das raízes com base no Delta
+			se (delta < 0)
+			{
+				escreva("A equação não possui raízes reais (Delta negativo).\n")
+			}
+			senao se (delta == 0)
+			{
+				x1 = (-b + mat.raiz(delta, 2.0)) / (2 * a)
+				escreva("A equação possui uma única raiz real:\n")
+				escreva("X = ", mat.arredondar(x1, 2), "\n")
